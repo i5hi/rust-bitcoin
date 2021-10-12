@@ -106,6 +106,15 @@ cargo test
 
 Please refer to the [`cargo` documentation](https://doc.rust-lang.org/stable/cargo/) for more detailed instructions. 
 
+You can build and use examples with:
+
+```
+cargo build --examples
+
+# example 1:
+cargo run --example <name> [args..]
+```
+
 ## Pull Requests
 
 Every PR needs at least two reviews to get merged. During the review phase

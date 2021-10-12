@@ -23,7 +23,7 @@ fn main() {
 
     let args: Vec<String> = env::args().collect();
     if args.len() < 2 {
-        eprintln!("not enough arguments. usage: {} <WIF>", &args[0]);
+        eprintln!("Missing arguments. Usage: cargo run --example bip32 <WIF>");
         process::exit(1);
     }
 
@@ -60,5 +60,4 @@ fn main() {
                          .public_key;
     let address = Address::p2wpkh(&public_key, network).unwrap();
     println!("First receiving address: {}", address);
-
 }

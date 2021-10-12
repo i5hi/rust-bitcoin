@@ -16,7 +16,7 @@ fn main() {
     // "version" message, waits for the reply, and finally closes the connection.
     let args: Vec<String> = env::args().collect();
     if args.len() < 2 {
-        eprintln!("not enough arguments");
+        eprintln!("Missing arguments. Usage: cargo run --exmaple handshake <address>");
         process::exit(1);
     }
 
