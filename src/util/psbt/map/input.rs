@@ -98,7 +98,7 @@ pub struct Input {
     /// SHA256 hash to preimage map
     #[cfg_attr(feature = "serde", serde(with = "::serde_utils::btreemap_byte_values"))]
     pub sha256_preimages: BTreeMap<sha256::Hash, Vec<u8>>,
-    /// HSAH160 hash to preimage map
+    /// HAS160 hash to preimage map
     #[cfg_attr(feature = "serde", serde(with = "::serde_utils::btreemap_byte_values"))]
     pub hash160_preimages: BTreeMap<hash160::Hash, Vec<u8>>,
     /// HAS256 hash to preimage map
